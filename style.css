@@ -1,0 +1,133 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 10000;
+    font-style: bold;
+    text-align: center;
+    cursor:text;
+    
+}
+
+
+body{
+    background-color: rgb(101, 213, 213);    /* search color pallette from coolors.com */
+    text-align: center;
+   
+}
+
+
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.game
+{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;   /* Allows boxes to go to new rows */
+    justify-content: center; /* Centers boxes horizontally */
+    align-items: center;  
+    gap: 0.8vmin;  /* Adds space between boxes both horizontally and vertically */ 
+}
+
+
+
+.box {
+
+  height: 18vmin;
+  width: 18vmin;
+  display: flex;                /* Activates Flexbox layout */
+  justify-content: center;      /* Horizontally center "X" */
+  align-items: center;          /* Vertically center "X" */
+  text-align: center;       /*Mostly affects multi-line text, but not vertical alignment*/
+  
+
+  border-radius: 1rem;      /* rounds the corners of the box by 1rem  */
+  border: none;             /* Removes any default border the element might have (useful   if it's a button or input).   */ 
+
+
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);       /* Adds a subtle shadow around the box to create a 3D effect. X-offset: 0
+→ Y-offset: 0
+→ Blur radius: 1rem
+→ Color: rgba(0, 0, 0, 0.3) (semi-transparent black) */
+
+
+  font-size: 8vmin;      /*Sets the font size of the text inside the box to be 8% of the smaller viewport dimension.*/
+
+  color: #b0413e;       /*The text color (for "X" or "O") — a reddish/brownish color.*/
+
+  background-color: #c9ef4b;     /*A light yellow background — makes the box stand out with a pleasant, soft look.*/
+
+  cursor: pointer;         /*Makes the box change its cursor to a pointing hand when hovered over  */
+
+  }
+
+
+   #reset-btn{
+    padding: 1rem;
+    margin: 1rem;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 0.75rem;
+    cursor:grab;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #191913;
+    color: #fff;
+  border-radius: 1rem;
+  border: none;
+
+}
+
+
+
+#new-btn {
+  padding: 1rem;
+    margin: 1rem;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 0.75rem;
+    cursor:grab;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #191913;
+    color: #fff;
+  border-radius: 1rem;
+  border: none;
+
+}
+
+#msg {
+  color: #ffffc7;
+  font-size: 5vmin;
+}
+
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.hide {
+  display: none;
+}
+
+
+
+
+
+
