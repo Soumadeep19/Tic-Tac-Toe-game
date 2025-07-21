@@ -12,15 +12,19 @@ h1{
     cursor:text;
     
 }
+
+
+
 #myVideo {
-  position:fixed;     /*To fix the video to the entire screen and keep it stuck in the   background, regardless of scrolling OR OTHER CONTENT */
-  top: 0%;
-  left: 0;
-  min-width: 100%;        /*the video should be at least as wide as the browser window (100% of the viewport width)*/
-  min-height: 100%;
-  z-index: -1;             /* ensures the video stays in the background. */
-  object-fit: cover;       /* makes the video fill the screen nicely. */
-  opacity: 30%;            /* optional:- for a faded background effect */
+  position: fixed;        /*To fix the video to the entire screen and keep it stuck in the   background, regardless of scrolling OR OTHER CONTENT */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;           /* the video should be at least as wide as the browser window (100% of the viewport width)  */
+  min-height: 100%;       
+  z-index: -1;                     /* ensures the video stays in the background. */
+  object-fit: cover;               /* makes the video fill the screen nicely. */
+  opacity: 7%;                     /* optional:- for a faded background effect */
 }
 
 body {
